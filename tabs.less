@@ -1,0 +1,47 @@
+.tabs {
+  background-image: linear-gradient(#C0C0C0, #E3E3E5);
+  box-shadow: 0px 1px 0px 0px rgba(255,254,255,0.60), inset 0px 1px 0px 0px rgba(0,0,0,0.00), inset 0px 1px 5px 0px rgba(0,0,0,0.15);
+  font:11px "Lucida Grande";
+  border-bottom:1px solid #999;
+}
+
+.tab {
+  background-image: -webkit-linear-gradient(#E3E3E5, #C0C0C0);
+  color: #555;
+  text-shadow: 1px 1px rgba(255, 255, 255, 0.4);
+  box-shadow:
+    inset 1px 0 0 rgba(255, 255, 255, 0.2), /* left highlight */
+    inset 2px 0 0 rgba(255, 255, 255, 0.1), /* left shadow */
+    inset -1px 0 0 rgba(0, 0, 0, 0.2), /* right shadow */
+    inset -2px 0 0 rgba(255, 255, 255, 0.1), /* right hightlight */
+    inset 0 1px 0 rgba(255, 255, 255, 0.5), /* top hightlight */
+    inset 0 -1px 0 rgba(255, 255, 255, 0.2); /* bottom shadow */
+}
+
+.tab.active,
+.tab:hover.active {
+  background-image: -webkit-linear-gradient(#fefefe, #e7e6e7);
+  color: #323232;
+  text-shadow: 1px 1px rgba(255, 255, 255, 0.5);
+  box-shadow:
+    inset -1px 0 0 rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 1),
+    inset 0 -1px 0 rgba(255, 255, 255, 1);
+}
+
+.tabs .tab .close-icon {
+  color: #989898;
+  cursor:default;
+}
+
+.tab .close-icon:hover {
+  color: #686868;
+}
+
+.tab.file-modified .close-icon {
+  border-color: #1965d0;
+}
+
+.tab.file-modified:hover .close-icon:before {
+  color: #1965d0;
+}

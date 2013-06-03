@@ -1,0 +1,38 @@
+.editor.mini {
+  border-radius:3px;
+  background: #FFF;
+  border: 1px solid #979797;
+  box-shadow:inset rgba(0,0,0,0.2) 0 1px 3px;
+  padding:2px 6px;
+  box-sizing:border-box;
+
+  .cursor {
+    border-color:#ccc;
+  }
+
+  .gutter.drop-shadow {
+    -webkit-box-shadow: -2px 0px 10px 2px #222222;
+  }
+}
+
+.editor-colors.mini {
+  color:#555;
+}
+
+.editor.mini .selection .region {
+  background-color: rgba(56,146,227,0.25);
+}
+
+@-webkit-keyframes highlight {
+  from {
+    background-color: rgba(56,146,227,0.7);
+  }
+  to {
+    background-color: null;
+  }
+}
+.editor .highlighted.selection .region {
+  -webkit-animation-name: highlight;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-iteration-count: 1;
+}
