@@ -1,0 +1,123 @@
+.select-list {
+  background-image: linear-gradient(#E3E3E5, #C0C0C0 50px);
+  border:none;
+  border-top:1px solid #999;
+  box-shadow:
+    rgba(0,0,0, 0.3) 0 0 0 1px,
+    rgba(0,0,0, 0.3) 0 3px 8px,
+    inset 0 1px 0 rgba(255, 255, 255, 0.5), /* top hightlight */
+    inset 0 -1px 0 rgba(0,0,0, 0.2); /* bottom shadow */
+  -webkit-transition: top 0.4s ease-out;
+  border-radius:0 0 5px 5px;
+  color:#555;
+  padding:12px 10px 12px 12px;
+  -webkit-transform:rotate3d(0,0,0);
+}
+
+.select-list .error {
+  font:300 13px/17px "Helvetica Neue";
+  color:#999;
+  padding:12px;
+}
+
+.select-list .loading {
+  color: #333;
+}
+
+.select-list ol,
+.select-list .error {
+  background:#fff;
+  border-top:1px solid #a0a0a0;
+  border-bottom:1px solid #a0a0a0;
+  box-shadow:rgba(255,255,255,0.2) 0 1px;
+  margin:0 -10px 0 -12px;
+}
+
+.select-list ol li {
+  background-color: #fff;
+  position:relative;
+  z-index:1;
+  box-shadow:inset rgba(0,0,0,0.1) 0 1px 0;
+}
+.select-list ol li:first-child {
+  margin-top:-1px;
+}
+.select-list ol li:hover {
+  background-color: #f9f9f9;
+}
+.select-list ol li .primary-line:before {
+  display:none;
+}
+
+.select-list ol li,
+.select-list ol li .primary-line {
+  font:500 13px/17px "Helvetica Neue";
+  color:#333;
+}
+
+.select-list ol li.selected + li {
+  box-shadow:none;
+}
+
+.select-list ol .selected {
+  background-image: linear-gradient(#4DBBEF, #2C84CB);
+  box-shadow:inset rgba(255,255,255,0.2) 0 2px 0, inset rgba(16,63,100,0.6) 0 1px, inset rgba(16,63,100,0.4) 0 -1px;
+  color:#fff;
+  text-shadow:rgba(0,0,0,0.4) 0 1px;
+  z-index:2;
+
+  .primary-line {
+    color:#fff;
+  }
+}
+.select-list ol .selected .right,
+.select-list ol .selected .secondary-line {
+  color:#fff;
+  opacity:0.7;
+}
+
+.select-list ol .secondary-line {
+  padding:0;
+  margin:0;
+}
+
+.select-list ol .right,
+.select-list ol .secondary-line {
+  color: #b8b8b8;
+  font:11px/17px "Lucida Grande";
+}
+.select-list ol .modified {
+  color: #f78a46;
+}
+
+.select-list ol li.selected .modified,
+.select-list ol li.selected .new {
+  color:#fff;
+  opacity:0.7;
+}
+
+.select-list ol .new {
+  color: #5293d8;
+}
+
+.select-list ol li.active-item:before {
+  font-family: 'Octicons Regular';
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  text-decoration: none;
+  font-size: 14px;
+  width: 14px;
+  height: 14px;
+  content: "\f03a";
+}
+
+.select-list ol .key-binding {
+  font:11px "Lucida Grande";
+  border-radius: 2px;
+  margin-left: 5px;
+  padding: 3px;
+  font-size: 11px;
+}
