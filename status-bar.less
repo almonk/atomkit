@@ -1,0 +1,50 @@
+.status-bar {
+  color: #333;
+  font:500 11px "Lucida Grande";
+  padding:8px 12px 10px;
+  text-shadow:rgba(255,255,255,0.4) 0 1px;
+  background-image: linear-gradient(#E3E3E5, #C0C0C0);
+  border-top:1px solid #999;
+  color:#555;
+  box-shadow:
+    inset 1px 0 0 rgba(255, 255, 255, 0.2), /* left highlight */
+    inset 2px 0 0 rgba(255, 255, 255, 0.1), /* left shadow */
+    inset -1px 0 0 rgba(0, 0, 0, 0.2), /* right shadow */
+    inset -2px 0 0 rgba(255, 255, 255, 0.1), /* right hightlight */
+    inset 0 1px 0 rgba(255, 255, 255, 0.5), /* top hightlight */
+    inset 0 -1px 0 rgba(255, 255, 255, 0.2); /* bottom shadow */
+
+  .prompt {
+    margin-bottom:3px;
+    position:relative;
+  }
+
+  .prompt:before {
+    color:rgba(0,0,0,0.2);
+    line-height:1;
+    top:1px;
+    display:inline-block;
+    position:relative;
+  }
+
+  .git-status.octicons.modified-status-icon {
+    color: #f78a46;
+    display: inline-block;
+  }
+
+  .git-status.octicons.new-status-icon {
+    color: #5293d8;
+    display: inline-block;
+  }
+
+  .git-status.octicons.ignored-status-icon {
+    color: #333;
+    display: inline-block;
+  }
+
+  .grammar-name:hover {
+    color: #000;
+    border: 1px solid rgba(50, 50, 50, 0.2);
+    border-radius: 2px;
+  }
+}
