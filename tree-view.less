@@ -2,18 +2,23 @@
   font:11px/15px "Lucida Grande";
   background: #DDE3E8;
   padding:4px 6px;
+  min-width:0;
 }
 
 .tree-view-scroller {
   border-right: 1px solid #989898;
 }
 
-.tree-view .directory .entries {
-  margin-left:14px;
+.tree-view .file .name {
+  margin:0;
 }
 
-.tree-view .file {
-  line-height:17px;
+.tree-view .entry {
+  min-height:20px;
+}
+
+.tree-view .directory .entries {
+  margin-left:14px;
 }
 
 .tree-view .entry.selected .highlight {
@@ -24,6 +29,19 @@
   color:#555;
   vertical-align:middle;
   text-shadow: rgba(255,255,255,0.6) 0 1px;
+  display:block;
+  position:relative;
+  left:0;
+  top:0;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  line-height:21px;
+  padding-left:15px;
+}
+
+.tree-view .entry.new .name,
+.tree-view .entry.modified .name {
+  padding-right:18px;
 }
 
 .tree-view .selected > .highlight {
@@ -44,8 +62,8 @@
   text-shadow:rgba(0,0,0,0.4) 0 1px;
 }
 
-.tree-view:focus .selected.new:after,
-.tree-view:focus .selected.modified:after {
+.tree-view:focus .selected.new:before,
+.tree-view:focus .selected.modified:before {
   color:#fff;
   text-shadow:rgba(0,0,0,0.3) 0 -1px;
   opacity:0.7;
@@ -94,9 +112,15 @@
   top:3px;
 }
 
+.tree-view .directory > .header .disclosure-arrow {
+  position:absolute;
+  z-index:10;
+}
+
 .tree-view .directory.expanded > .header .disclosure-arrow:before {
   width:9px;
   height:9px;
+  top:4px;
   content:' ';
   display:inline-block;
   background:
@@ -110,32 +134,34 @@
   color:#999;
 }
 
-.tree-view .modified:after {
+.tree-view .modified:before {
   color: #f78a46;
 }
 
-.tree-view .new:after,
-.tree-view .modified:after {
+.tree-view .new:before,
+.tree-view .modified:before {
   font-family:"Octicons Regular";
   font-size:14px;
+  line-height:1;
   content:'\f26b';
   position:absolute;
   color:#5293d8;
+  margin-top:4px;
   right:12px;
   height:10px;
   width:10px;
-  margin-top:-17px;
-  display:block;
   text-shadow:rgba(255,255,255,0.4) 0 1px;
   opacity:0.7;
+  -webkit-transform:rotate3d(0,0,0);
+  z-index:5;
 }
 
-.tree-view:focus .new:after,
-.tree-view:focus .modified:after {
+.tree-view:focus .new:before,
+.tree-view:focus .modified:before {
   opacity:1.0;
 }
 
-.tree-view .modified:after {
+.tree-view .modified:before {
   color:#f78a46;
   content:"\f26d";
 }
