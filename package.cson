@@ -1,0 +1,13 @@
+'stylesheets': [
+  'atom'
+  'editor'
+  'overlay'
+  'select-list'
+  'tree-view'
+  'tabs'
+  'status-bar'
+  'command-panel'
+  'command-logger'
+  'blurred'
+  'image-view'
+]
