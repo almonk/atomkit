@@ -7,11 +7,22 @@
     rgba(0,0,0, 0.3) 0 3px 8px,
     inset 0 1px 0 rgba(255, 255, 255, 0.5), /* top hightlight */
     inset 0 -1px 0 rgba(0,0,0, 0.2); /* bottom shadow */
-  -webkit-transition: top 0.4s ease-out;
   border-radius:0 0 5px 5px;
   color:#555;
   padding:12px 10px 12px 12px;
   -webkit-transform:rotate3d(0,0,0);
+}
+
+.select-list.popover-list {
+  border-radius:5px;
+
+  .editor {
+    margin-bottom:10px;
+  }
+
+  ol {
+    width:auto !important;
+  }
 }
 
 .select-list .error {
