@@ -1,8 +1,9 @@
 # A Mac theme for Atom
 
-Based off the visual styles of [the new GitHub for Mac](https://github.com/github/mac-mockup).
+Based off the visual styles of [the new GitHub Desktop](https://github.com/github/desktop).
 
-![The visuals](https://github-team.s3.amazonaws.com/uploads/statuses/15507/images/Screen_Shot_2013-06-03_at_12.34.56_PM.png)
+![The Pretty](https://f.cloud.github.com/assets/1680/1281967/8efe9c38-2f6b-11e3-8545-7a0f1766be85.png)
+
 
 ## Install
 
