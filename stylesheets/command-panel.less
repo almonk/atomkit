@@ -1,0 +1,150 @@
+.command-panel {
+  background-color: #f4f4f4;
+  border-top: 1px solid #979797;
+  color: #ededed;
+  padding: 11px 10px;
+}
+
+.find-and-replace-container {
+  background-color:#f4f4f4;
+  border-top:1px solid #979797;
+}
+
+.find-and-replace-container label {
+  font-size:11px;
+}
+
+.btn-group > .btn:first-child {
+  border-left:1px solid #aaa;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.btn-group > .btn:last-child, .btn-group > .btn.selected:last-child, .btn-group > .dropdown-toggle {
+  border-right:1px solid #aaa;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.btn-group .btn {
+  height:32px;
+}
+
+.project-find .find-container .btn-toggle.btn-group, .project-find .replace-container .btn-toggle.btn-group, .project-find .paths-container .btn-toggle.btn-group {
+  width:100px;
+}
+
+.tool-panel .panel-heading {
+  background: #F3F3F3;
+  border: 1px solid #A8A8A8;
+  border-bottom:none;
+  border-radius:4px 4px 0 0;
+  box-shadow:inset rgba(255,255,255,0.25) 0 -1px 0, inset #fff 0 1px 0;
+  padding:6px 8px;
+  font:500 13px "Helvetica Neue";
+}
+.tool-panel .results-view {
+  background-color: #f8f8f8;
+  color: #555;
+  border: 1px solid #a0a0a0;
+  padding:0;
+}
+.command-panel .preview-count {
+  color:#333;
+  font-size:13px;
+  padding-left:6px;
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
+}
+.tool-panel .results-view .path-details {
+  background: rgba(0,0,0,0.05);
+  border-bottom:1px solid #d5d5d5;
+  font:11px "Lucida Grande";
+  line-height:25px;
+  position:relative;
+  padding:0 10px;
+}
+
+.tool-panel .results-view .path-details .icon {
+  display:none;
+}
+
+.tool-panel .results-view .path.selected .path-details,
+.tool-panel .results-view li.operation.selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.tool-panel .results-view .path {
+  color: #555;
+  border-top: 1px solid #ccc;
+  box-shadow:inset #fff 0 1px;
+  font:11px "Lucida Grande";
+}
+.tool-panel .results-view .path:before {
+  display:none;
+}
+.tool-panel .results-view .path:first-child {
+  border-top: none;
+}
+
+.tool-panel .matches {
+  display:table;
+  border-collapse:collapse;
+  width:100%;
+
+  li.search-result {
+    font-size:11px;
+    display:table-row;
+
+    &.selected {
+      background:rgba(70,158,247,0.1)
+    }
+
+    & > span {
+      padding:0 10px;
+      display:table-cell;
+      font-size:12px;
+      font-family:Monoco, monospace;
+    }
+
+    span.line-number {
+      width:1px;
+      border-right:1px solid rgba(0,0,0,0.05);
+    }
+  }
+}
+
+.matches.list-group .selected:before, .matches.list-tree .selected:before {
+  content:none;
+
+}
+
+.list-tree .list-nested-item > .list-tree, .list-tree .list-nested-item > .list-group {
+  margin-left:0;
+}
+
+.tool-panel .results-panel .line-number {
+  color: #777;
+}
+.tool-panel .results-panel .path-match-number {
+  opacity:0.7;
+}
+.tool-panel .results-panel .preview {
+  word-break: break-all;
+}
+.tool-panel .results-panel .preview .match {
+  background-color: #0086ca;
+  color: #fff;
+}
+.tool-panel .results-panel li.operation {
+  color: #777;
+}
+.tool-panel .results-panel li.operation:hover,
+.tool-panel li.operation.selected .preview {
+  color: #333;
+}
+.tool-panel .error-messages {
+  padding:0 0 10px;
+  color:#911;
+  font:500 13px/15px "Helvetica Neue";
+  text-shadow:rgba(255,255,255,0.8) 0 1px;
+}

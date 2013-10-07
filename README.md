@@ -6,10 +6,8 @@ Based off the visual styles of [the new GitHub for Mac](https://github.com/githu
 
 ## Install
 
-```
-cd ~/.atom/themes
-git clone https://github.com/atom/atom-mac-theme.git
-```
+Open Atom Preferences, select Packages > Available Packages, select Mac Theme,
+then Install.
 
-Open Atom, `Cmd+,`, select Themes, then add `atom-mac-theme` and remove any other
-UI style. Close the preferences, then `Cmd+r`.
+Activate the theme by selecting the Themes section of Preferences, deactivating
+any other UI themes you have, and activating Mac Theme.

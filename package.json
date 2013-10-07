@@ -1,0 +1,19 @@
+{
+  "name": "Mac Theme",
+  "theme": true,
+  "version": "0.2.0",
+  "description": "An OSX style theme for Atom",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/atom/atom-mac-theme.git"
+  },
+  "bugs": {
+    "url": "https://github.com/atom/atom-mac-theme/issues"
+  },
+  "engines": {
+    "atom": ">26.0"
+  },
+  "publishConfig": {
+    "registry": "https://atom.cloudant.com/registry/_design/app/_rewrite"
+  }
+}

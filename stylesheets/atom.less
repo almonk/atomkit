@@ -17,13 +17,17 @@
   color:#555;
   text-shadow:rgba(255,255,255,0.4) 0 1px;
 }
-.btn:hover,
-.btn:focus,
+.btn:focus {
+  background-image: linear-gradient(#e8e8e8, #d6d6d6);
+}
+
 .btn:active,
-.btn.active {
-  background-color: #bebebe;
+.btn.selected {
+  background-image: linear-gradient(#a7a7a7, #E3E3E5);
+  box-shadow:inset 0px 2px 3px rgba(0,0,0,0.20);
   border-color: #9a9a9a;
 }
+
 .btn.disabled:hover,
 .btn[disabled]:hover,
 fieldset[disabled] .btn:hover,

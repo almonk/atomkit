@@ -1,11 +1,11 @@
-.tabs {
+.tab-bar {
   background-image: linear-gradient(#C0C0C0, #E3E3E5);
   box-shadow:inset 0px 1px 0px 0px rgba(0,0,0,0.00), inset 0px 1px 5px 0px rgba(0,0,0,0.15);
   font:11px "Lucida Grande";
   border-bottom:1px solid #727272;
 }
 
-.tab {
+.tab-bar .tab {
   background-image: -webkit-linear-gradient(#E3E3E5, #C0C0C0);
   color: #555;
   text-shadow: 1px 1px rgba(255, 255, 255, 0.4);
@@ -16,6 +16,7 @@
     inset -2px 0 0 rgba(255, 255, 255, 0.1), /* right hightlight */
     inset 0 1px 0 rgba(255, 255, 255, 0.5), /* top hightlight */
     inset 0 -1px 0 rgba(255, 255, 255, 0.2); /* bottom shadow */
+  padding:8px 26px 8px 10px;
 }
 
 .tab.active,
@@ -29,9 +30,11 @@
     inset 0 -1px 0 rgba(255, 255, 255, 1);
 }
 
-.tabs .tab .close-icon {
+.tab-bar .tab .close-icon {
   color: #989898;
   cursor:default;
+  top:7px;
+  right:8px;
 }
 
 .tab .close-icon:hover {
