@@ -1,5 +1,5 @@
 {
-  "name": "Mac Theme",
+  "name": "atom-mac-theme",
   "theme": true,
   "version": "0.2.0",
   "description": "An OSX style theme for Atom",
