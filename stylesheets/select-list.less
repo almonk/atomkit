@@ -13,6 +13,12 @@
   -webkit-transform:rotate3d(0,0,0);
 }
 
+.select-list .loading {
+  position:absolute;
+  right:24px;
+  top:18px;
+}
+
 .select-list.popover-list {
   border-radius:5px;
 
@@ -38,8 +44,7 @@
 .select-list ol,
 .select-list .error {
   background:#fff;
-  border-top:1px solid #a0a0a0;
-  border-bottom:1px solid #a0a0a0;
+  border:1px solid #a0a0a0;
   box-shadow:rgba(255,255,255,0.2) 0 1px;
   margin:0 -10px 0 -12px;
 }
@@ -47,6 +52,7 @@
 .select-list ol li {
   background-color: #fff;
   position:relative;
+  padding:6px 8px;
   z-index:1;
   box-shadow:inset rgba(0,0,0,0.1) 0 1px 0;
 }
@@ -125,10 +131,15 @@
   content: "\f03a";
 }
 
+.select-list ol li.selected:before {
+  display:none;
+}
+
 .select-list ol .key-binding {
   font:11px "Lucida Grande";
   border-radius: 2px;
   margin-left: 5px;
   padding: 3px;
   font-size: 11px;
+  opacity:0.7;
 }
