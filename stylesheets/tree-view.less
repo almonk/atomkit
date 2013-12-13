@@ -11,6 +11,7 @@
 
 .tree-view-scroller {
   border-right: 1px solid #989898;
+  overflow-x:hidden;
 }
 
 .header.list-item {
@@ -45,14 +46,18 @@
   position:relative;
   left:0;
   top:0;
+  right:0;
+  width:100%;
   overflow:hidden;
   text-overflow:ellipsis;
+  box-sizing:border-box;
+  white-space:nowrap;
   line-height:21px;
   padding-left:15px;
 }
 
-.tree-view .entry.new .name,
-.tree-view .entry.modified .name {
+.tree-view .entry.status-new > .name,
+.tree-view .entry.status-modified > .name {
   padding-right:18px;
 }
 
@@ -96,9 +101,6 @@
 .tree-view .entry > .header > .name:before,
 .tree-view .entry > .name:before {
   display:none;
-  color:rgba(0,0,0,0.2);
-  text-shadow: rgba(255,255,255,0.2) 0 1px;
-  top:2px;
 }
 
 .tree-view .entry.selected > .header > .name:before,
