@@ -2,13 +2,13 @@
   "name": "Atomkit",
   "theme": "ui",
   "version": "0.4.2",
-  "description": "An OSX style theme for Atom",
+  "description": "A seamless theme for osx",
   "repository": {
     "type": "git",
-    "url": "https://github.com/atom/atom-mac-theme.git"
+    "url": "https://github.com/almonk/atomkit"
   },
   "bugs": {
-    "url": "https://github.com/atom/atom-mac-theme/issues"
+    "url": "https://github.com/almonk/atomkit/issues"
   },
   "engines": {
     "atom": ">26.0"
