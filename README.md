@@ -1,15 +1,7 @@
-# A Mac theme for Atom
+# Atomkit (wip)
 
-Desktop styles inspired by OS X.
+Atom theme for OSX
 
-![The Pretty](https://f.cloud.github.com/assets/1680/1281967/8efe9c38-2f6b-11e3-8545-7a0f1766be85.png)
+![Screenshot](http://cloud.alasdairmonk.com/image/0S1C3T2p3j2N/Screen%20Shot%202014-02-27%20at%2013.53.23.png)
 
 
-## Install
-
-Open Atom Preferences, select Themes > Search for `atom-mac-theme`,
-then Install.
-
-*You may need to reload Atom `Cmd+R` in between these steps.*
-
-Activate the theme by selecting the Themes section of Preferences.
