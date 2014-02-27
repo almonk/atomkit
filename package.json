@@ -1,7 +1,7 @@
 {
   "name": "atom-mac-theme",
   "theme": "ui",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "description": "An OSX style theme for Atom",
   "repository": {
     "type": "git",
