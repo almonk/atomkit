@@ -69,21 +69,10 @@
   padding-right:18px;
 }
 
-.tree-view .selected:before {
-  color:#555;
-  margin-top:1px;
-  height:23px;
-  text-shadow:rgba(255,255,255,0.8) 0 1px;
-  background-image: linear-gradient(#D5DDE0, #CBD8DB);
-  box-shadow:
-    inset rgba(135,147,150,0.56) 0 1px 0,
-    inset rgba(135,147,150,0.56) 0 -1px 0,
-    inset rgba(255,255,255,0.42) 0 2px 0;
-}
 
 .tree-view:focus .selected:before {
-  background-image: linear-gradient(#4DBBEF, #2C84CB);
-  box-shadow:inset rgba(255,255,255,0.2) 0 2px 0, inset rgba(16,63,100,0.6) 0 1px, inset rgba(16,63,100,0.2) 0 -1px;
+  background-image: linear-gradient(#74BAE8, #3B88D0);
+  box-shadow:inset rgba(255,255,255,0.1) 0 2px 0, inset rgba(16,63,100,0.4) 0 1px, inset rgba(16,63,100,0.2) 0 -1px;
   border-width:1px 0 0;
   color:#fff;
   text-shadow:rgba(0,0,0,0.4) 0 1px;
@@ -103,7 +92,7 @@
 .tree-view:focus .selected.entry > .header > .name,
 .tree-view:focus .selected.entry > .name {
   color:#fff;
-  text-shadow:rgba(0,0,0,0.4) 0 1px;
+  text-shadow:rgba(0,0,0,0.4) 0 1px 2px;
 }
 
 .tree-view .entry > .header > .name:before,
@@ -113,9 +102,27 @@
 
 .tree-view .entry.selected > .header > .name:before,
 .tree-view .entry.selected > .name:before {
-  color:rgba(0,0,0,0.2);
+  color: #fff;
   text-shadow: rgba(255,255,255,0.2) 0 1px;
 }
+
+.tree-view .selected:before {
+  margin-top:1px;
+  height:23px;
+  text-shadow:rgba(255,255,255,0.5) 0 1px;
+  background-image: linear-gradient(#C3CCDF, #9CAAC4);
+  box-shadow:
+    inset rgba(135,147,150,0.3) 0 1px 0,
+    inset rgba(135,147,150,0.3) 0 -1px 0,
+    inset rgba(255,255,255,0.1) 0 2px 0;
+  color:#fff;
+}
+
+.tree-view .entry.selected > .header > .name {
+  color:#fff;
+  text-shadow:rgba(0,0,0,0.4) 0 1px 2px;
+}
+
 
 .tree-view .entry .name {
   vertical-align:middle;
